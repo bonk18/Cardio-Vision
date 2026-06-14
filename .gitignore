@@ -1,0 +1,35 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches
+.pytest_cache/
+.cache/
+.ipynb_checkpoints/
+
+# Virtual Environment
+.venv/
+env/
+venv/
+ENV/
+
+# Project Data (can be downloaded using the CLI)
+data/*.csv
+data/processed/
+data/raw/
+!data/.gitkeep
+
+# Model weights and checkpoints
+models/*.pt
+models/*.pth
+!models/.gitkeep
+
+# Generated Reports
+reports/*.html
+!reports/.gitkeep
+
+# System and OS Files
+.DS_Store
+Thumbs.db
+*.log
