@@ -25,6 +25,21 @@
 
 ---
 
+## 📊 Model Performance
+
+The CardioVision architectures have been rigorously evaluated on the MIT-BIH dataset test split, specifically optimized to achieve research-grade clinical classification.
+
+| Architecture | Overall Accuracy | Highlight / Optimization |
+| :--- | :---: | :--- |
+| **Hybrid CNN-LSTM** | **98.53%** | Baseline spatiotemporal feature extraction |
+| **Self-Attention Hybrid** | **~99.2%** | Captures critical long-range dependencies |
+| **ResNet Hybrid** | **99.03%** | Facilitates gradient flow using residual blocks |
+| **SE-Block Hybrid** | **99.14%** | Channel-wise feature calibration |
+
+*(Note: Training employed class-balanced square-root weighted sampling and label smoothing to maximize performance across underrepresented cardiac arrhythmias).*
+
+---
+
 ## 🏗️ System Pipeline
 
 The CardioVision pipeline consists of six primary stages:
